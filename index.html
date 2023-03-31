@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <title>Home Page</title>
+</head>
+
+<body class="font-[Poppins] h-screen">
+    <header class="bg-[#52CEBA]">
+        <nav class="flex justify-between items-center w-[92%]  mx-auto">
+            <div>
+                <img class="w-16  py-3"
+                    src="https://imgs.search.brave.com/q0LEF30Jib4BPnzZVr21bk04ucsgS_NsW1zEYLaUtps/rs:fit:608:609:1/g:ce/aHR0cHM6Ly9kc2Mt/bG9nby1nZW5lcmF0/b3IudmVyY2VsLmFw/cC9sb2dvcy9nZHNj/LWxvZ28ucG5n"
+                    alt="...">
+            </div>
+            <div
+                class="nav-links duration-500 md:static absolute bg-[#52CEBA] md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                    <li>
+                        <a href="index.html"
+                            class="bg-[#438A70] text-white px-5 py-2 rounded-full hover:bg-[#87acec]">Home</a>
+                    </li>
+                    <li>
+                        <a href="problems.html"
+                            class="bg-[#438A70] text-white px-5 py-2 rounded-full hover:bg-[#87acec]">PROBLEMS</a>
+                    </li>
+                    <li>
+                        <a href="india.html"
+                            class="bg-[#438A70] text-white px-5 py-2 rounded-full hover:bg-[#87acec]">INDIA</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-6">
+
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+            </div>
+    </header>
+
+    <!-- Hero -->
+    <div id="hero" class="relative flex flex-col-reverse py-16 lg:pt-0 lg:flex-col lg:pb-0">
+        <div
+            class="inset-y-0 top-0 right-0 z-0 w-full max-w-xl px-4 mx-auto md:px-0 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-7/12 lg:max-w-full lg:absolute xl:px-0">
+            <svg class="absolute left-0 hidden h-full text-white transform -translate-x-1/2 lg:block"
+                viewBox="0 0 100 100" fill="currentColor" preserveAspectRatio="none slice">
+                <path d="M50 0H100L50 100H0L50 0Z"></path>
+            </svg>
+            <img class="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
+                src="https://imgs.search.brave.com/fROAvEMKr5nx243GEcBPgR93tXN8kHxJiG3Av0bpbwk/rs:fit:978:978:1/g:ce/aHR0cHM6Ly9jaXRp/emVuc2NpZW5jZS5j/aC9pbWcvc2RnLXdo/ZWVsLnBuZw"
+                alt="" />
+        </div>
+        <div class="relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl">
+            <div class="mb-16 lg:my-40 lg:max-w-lg lg:pr-5">
+                <p
+                    class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
+                    Sustainable Development Goal - 7
+                </p>
+                <h2 class="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+                    Ensure access to affordable, reliable, sustainable and modern energy for all
+                </h2>
+                <p class="pr-5 mb-5 text-base text-gray-700 md:text-lg">
+                    Having access to improved energy technology is essential for social security, livelihood
+                    improvement, and economic growth. An improved energy system for households in warm climatic
+                    conditions mainly includes access to a suitable source of energy for cooking, lighting, and powering
+                    of appliances.
+                </p>
+                <div class="flex items-center">
+                    <a href="problems.html"
+                        class="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-black transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero -->
+
+    <!-- Stats -->
+    <div id="statistics" class="container my-24 px-6 mx-auto">
+        <h2 class="text-3xl text-center font-bold mb-12">
+            Statical data given by <u class="text-blue-600">UN</u>
+          </h2>
+
+        <section class="mb-32 text-gray-800 text-center">
+            <div class="grid gap-x-6 lg:gap-x-12 md:grid-cols-3">
+                <div class="mb-12 md:mb-0">
+                    <h2 class="text-3xl font-bold display-5 text-blue-600 mb-4">679</h2>
+                    <h5 class="text-lg font-medium mb-4">Million</h5>
+                    <p class="text-gray-500">
+                        People without electricity.
+                    </p>
+                </div>
+
+                <div class="mb-12 md:mb-0">
+                    <h2 class="text-3xl font-bold display-5 text-blue-600 mb-4">2.4</h2>
+                    <h5 class="text-lg font-medium mb-4">Billion</h5>
+                    <p class="text-gray-500">
+                        Still use inefficient and polluting cooking systems.
+                    </p>
+                </div>
+
+                <div class="mb-12 md:mb-0">
+                    <h2 class="text-3xl font-bold display-5 text-blue-600 mb-4">$10.9</h2>
+                    <h5 class="text-lg font-medium mb-4">Billion</h5>
+                    <p class="text-gray-500">
+                        International financial flows to developing countries for renewables declined for second year in a row
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <!-- Stats -->
+
+    <footer class="flex-row bg-white dark:bg-gray-900 mx-auto">
+        <div class="mx-auto w-full container">
+            <div class="grid grid-cols-2 gap-8 px-6 py-8 md:grid-cols-4">
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">HOME</h2>
+                    <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                        <li class="mb-4">
+                            <a href="index.html#hero" class=" hover:underline">Goal</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="index.html#statistics" class="hover:underline">Statical Data</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Problems</h2>
+                    <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                        <li class="mb-4">
+                            <a href="problems.html#top" class="hover:underline">Renewable Energy</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="problems.html#top2" class="hover:underline">Biomass Energy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">India</h2>
+                    <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                        <li class="mb-4">
+                            <a href="india.html#indiasolution" class="hover:underline">Solution</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="india.html#indiasolution1" class="hover:underline">Kamuthi Solar Power Project</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="india.html#indiasolution2" class="hover:underline">Jaisalmer Wind Park</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="india.html#indiasolution3" class="hover:underline">Koyna Hydroelectric Project</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e) {
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[9%]')
+        }
+    </script>
+</body>
+
+</html>
